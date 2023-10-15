@@ -5,42 +5,45 @@ public class Task_1_SimpleCalculationsFormulas
 {
     static void Main(string[] args)
     {
-        Console.Write("Enter the value of the variable: ");
-        string? consoleInput = Console.ReadLine()!.Replace(".", ",");
-        if (consoleInput is not null)
+        try
         {
-            Console.WriteLine(MathEquation1(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation2(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation3(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation4(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation5(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation6(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation7(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation8(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation9(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation10(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation11(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation12(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation13(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation14(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation15(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation16(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation17(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation18(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation19(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation20(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation21(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation22(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation23(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation24(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation25(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation26(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation27(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation28(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation29(double.Parse(consoleInput)));
-            Console.WriteLine(MathEquation30(double.Parse(consoleInput)));
-        }
-        else
+            Console.Write("Enter the value of the variable: ");
+            string? consoleInput = Console.ReadLine()!.Replace(".", ",");
+            if (consoleInput is not null)
+            {
+                Console.WriteLine(MathEquation1(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation2(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation3(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation4(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation5(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation6(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation7(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation8(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation9(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation10(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation11(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation12(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation13(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation14(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation15(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation16(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation17(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation18(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation19(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation20(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation21(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation22(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation23(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation24(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation25(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation26(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation27(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation28(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation29(double.Parse(consoleInput)));
+                Console.WriteLine(MathEquation30(double.Parse(consoleInput)));
+            }
+        }        
+        catch
         {
             Console.WriteLine("You need to enter a value");
         }
