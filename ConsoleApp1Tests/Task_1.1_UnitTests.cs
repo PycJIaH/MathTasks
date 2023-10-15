@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Tests
 {
     [TestClass()]
-    public class ProgramTests
+    public class Task_1_UnitTests
     {
         [TestMethod()]
         public void MathEquation1Test_0_5()

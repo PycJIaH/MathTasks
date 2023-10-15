@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1.csproj", "{02A17E7C-7036-42CB-A423-E1EA992805AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathTasks", "MathTasks.csproj", "{02A17E7C-7036-42CB-A423-E1EA992805AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1Tests", "..\ConsoleApp1Tests\ConsoleApp1Tests.csproj", "{F2C02C68-FB3B-44CF-8EB3-9F4088719564}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathTasksTests", "..\ConsoleApp1Tests\MathTasksTests.csproj", "{F2C02C68-FB3B-44CF-8EB3-9F4088719564}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
