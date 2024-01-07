@@ -1,5 +1,6 @@
 ﻿using System;
 using static System.Math;
+using static MathTasks.Task_1_SimpleCalculationsFormulas;
 
 namespace MathTasks
 {
@@ -7,8 +8,7 @@ namespace MathTasks
     {
         static void Main(string[] args)
         {
-            Task2Solution(ReadIntFromConsole(), Task_1_SimpleCalculationsFormulas.ReadDoubleFromConsole(),
-                Task_1_SimpleCalculationsFormulas.ReadDoubleFromConsole());            
+            Task2Solution(ReadIntFromConsole(), ReadDoubleFromConsole(), ReadDoubleFromConsole());            
         }
 
         // Solution for issue No.2
@@ -29,14 +29,6 @@ namespace MathTasks
             return result;
         }
 
-        // Example number 1.
-        public static double MathEquation1(double x)
-        {
-            double result = Sqrt (Pow(E, (2.2 * x))) - Abs(Sin((PI * x) / (x + 2.0 / 3))) + 1.7;
-
-            return result;
-        }
-
         public static int ReadIntFromConsole()
         {
             while (true)
@@ -50,12 +42,10 @@ namespace MathTasks
                 }
                 catch
                 {
-                    // throw new Exception("You need to enter a valid double value! Repeat input!");
+                    // throw new Exception("You need to enter a valid integer value! Repeat input!");
                     Console.WriteLine("You need to enter a valid integer value! Repeat input!");
                 }
             }
         }
     }
-
-
 }
