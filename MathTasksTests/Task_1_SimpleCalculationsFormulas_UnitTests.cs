@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using static Task_1_SimpleCalculationsFormulas;
+using static MathTasks.Task_1_SimpleCalculationsFormulas;
 
 namespace MathTasksTests
 {
