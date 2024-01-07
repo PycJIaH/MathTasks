@@ -10,7 +10,7 @@ namespace MathTasks.Task_2_ForLoop_UnitTests
         [TestMethod()]
         public void Task2Solution_Test()
         {
-            Assert.AreEqual(3.916283860875562, Task2Solution(10, 0.55, 1.0));
+            Assert.AreEqual(3.7531095076512813, Task2Solution(10, 0.55, 1.0));
         }
     }
 }

@@ -15,16 +15,18 @@ namespace MathTasks
         public static double Task2Solution(int N, double A, double B)
         {
             double increment = (B - A) / N;
+            double result = 0;
 
             for (int i = 0; i <= N; i++)
             {
                 Console.WriteLine(i);
-                Console.WriteLine(MathEquation1(A));
+                result = MathEquation1(A);
+                Console.WriteLine(result);
                 A += increment;
                 Console.WriteLine(A);
             }
 
-            return MathEquation1(A);
+            return result;
         }
 
         // Example number 1.
