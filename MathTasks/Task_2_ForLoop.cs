@@ -7,11 +7,13 @@ namespace MathTasks
     {
         static void Main(string[] args)
         {
-            //double x = Task_1_SimpleCalculationsFormulas.ReadDoubleFromConsole();
+            Task2Solution(ReadIntFromConsole(), Task_1_SimpleCalculationsFormulas.ReadDoubleFromConsole(),
+                Task_1_SimpleCalculationsFormulas.ReadDoubleFromConsole());            
+        }
 
-            int N = ReadIntFromConsole();
-            double A = Task_1_SimpleCalculationsFormulas.ReadDoubleFromConsole();
-            double B = Task_1_SimpleCalculationsFormulas.ReadDoubleFromConsole();
+        // Solution for issue No.2
+        public static double Task2Solution(int N, double A, double B)
+        {
             double increment = (B - A) / N;
 
             for (int i = 0; i <= N; i++)
@@ -22,6 +24,7 @@ namespace MathTasks
                 Console.WriteLine(A);
             }
 
+            return MathEquation1(A);
         }
 
         // Example number 1.
