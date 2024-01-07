@@ -14,7 +14,7 @@ namespace MathTasks
             double B = Task_1_SimpleCalculationsFormulas.ReadDoubleFromConsole();
             double increment = (B - A) / N;
 
-            for (double i = 0; i <= N; i++)
+            for (int i = 0; i <= N; i++)
             {
                 Console.WriteLine(i);
                 Console.WriteLine(MathEquation1(A));
