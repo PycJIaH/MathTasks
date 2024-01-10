@@ -8,35 +8,38 @@ namespace MathTasks
     {
         static void Main(string[] args)
         {
-            Task2Solution(ReadIntFromConsole(), ReadDoubleFromConsole(), ReadDoubleFromConsole());            
+            Dictionary<double, double> res = Task2Solution(ReadDoubleFromConsole(), ReadDoubleFromConsole(), ReadUIntFromConsole());
+
+            foreach (var item in res)
+            {
+                Console.WriteLine("For x = {0:N4}, f(x) = {1:N4}", item.Key, item.Value);
+            }
         }
 
-        // Solution for issue No.2
-        public static double Task2Solution(int N, double A, double B)
+        // Составить алгоритм и программу вычисления таблицы значений функции f(x)
+        // из задачи #1 для N значений аргумента X, равномерно распределенных на отрезке [A, B].
+        // Для проверки программы задать N = 10; A = 0,55; B = 1.
+        public static Dictionary<double, double> Task2Solution(double A, double B, uint N)
         {
             double increment = (B - A) / N;
-            double result = 0;
+            Dictionary<double, double> result = new();
 
-            for (int i = 0; i <= N; i++)
+            for (double x = A; x <= B; x += increment)
             {
-                Console.WriteLine(i);
-                result = MathEquation1(A);
-                Console.WriteLine(result);
-                A += increment;
-                Console.WriteLine(A);
+                result[x] = MathEquation1(x);
             }
 
             return result;
         }
 
-        public static int ReadIntFromConsole()
+        public static uint ReadUIntFromConsole()
         {
             while (true)
             {
                 try
                 {
                     Console.WriteLine("Enter the integer value for equation: ");
-                    int res = int.Parse(Console.ReadLine()!.Replace(".", ","));
+                    uint res = uint.Parse(Console.ReadLine()!.Replace(".", ","));
                     Console.WriteLine("Input value: {0}", res);
                     return res;
                 }
